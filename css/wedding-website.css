@@ -20,6 +20,11 @@ body {
   font-size: 48pt;
 }
 
+.typed {
+  font-family: 'Josefin Slab', serif;
+  text-transform: uppercase;
+}
+
 .navbar-brand,
 .navbar-nav li a {
     line-height: 150px;
