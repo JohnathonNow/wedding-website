@@ -15,6 +15,11 @@ body {
   -o-background-size: cover;
 }
 
+.cursive {
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 48pt;
+}
+
 .navbar-brand,
 .navbar-nav li a {
     line-height: 150px;
