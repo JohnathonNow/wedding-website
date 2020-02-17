@@ -16,8 +16,10 @@ body {
 }
 
 .cursive {
-  font-family: 'Herr Von Muellerhoff', cursive;
-  font-size: 48pt;
+  /*font-family: 'Herr Von Muellerhoff', cursive;
+   */
+  font-family: 'Meddon', cursive;
+  font-size: 25pt;
 }
 
 .typed {
