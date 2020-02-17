@@ -45,24 +45,24 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link typed smollink" id="page1" href="#">Our Wedding
+            <a class="nav-link typed smollink" id="page1" href="#page1">Our Wedding
                 <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link typed smollink"  id="page2" href="#">Travel</a>
+            <a class="nav-link typed smollink"  id="page2" href="#page2">Travel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link typed smollink" href="#" id="page3">Things to Do</a>
+            <a class="nav-link typed smollink" href="#page3" id="page3">Things to Do</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link typed smollink" href="#" id="page4">Schedule of Events</a>
+            <a class="nav-link typed smollink" href="#page4" id="page4">Schedule of Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link typed smollink" href="#" id="page5">Registry</a>
+            <a class="nav-link typed smollink" href="#page5" id="page5">Registry</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link typed" href="#" id="page6">RSVP</a>
+            <a class="nav-link typed" href="#page6" id="page6">RSVP</a>
           </li>
         </ul>
       </div>
@@ -221,17 +221,19 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
     <script>
+        function goTo(targetID) {
+            var target = $('#'+targetID);
+            var parent = target.parent();
+            if (!parent.hasClass('active')) {
+                $('.active').removeClass('active');
+                parent.addClass('active');
+                $('.page').removeClass('currentPage');
+                $('.page').css('opacity','0');
+                $('#'+targetID+'-content').addClass('currentPage');
+            }
+        }
     $(".nav-link").click(function(ev) {
-
-        $('.active').removeClass('active');
-        var target = $(ev.target);
-        target.parent().addClass('active');
-        //$('.page').addClass('fadeOut');
-        $('.page').removeClass('currentPage');
-        //$('.page').removeClass('fadeIn');
-        $('.page').css('opacity','0');
-        $('#'+target.attr('id')+'-content').addClass('currentPage');
-        console.log(ev);
+        goTo($(ev.target).attr('id'));
     });
     $('.page').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
         console.log('HIII');
@@ -243,7 +245,12 @@
     });
     $('.page').hide();
     $('#page1-content').show();
-  </script>
+    var hash = $(location).attr('hash');
+    if (hash) {
+        hash = hash.substr(1);
+        goTo(hash);
+    } 
+    </script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
