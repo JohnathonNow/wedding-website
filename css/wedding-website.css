@@ -43,3 +43,19 @@ body {
 .nav-link {
     margin-top: 45px;
 }
+.page {
+      transition: visibility 0s, opacity 1s linear;
+    }
+
+    .page.fadeOut {
+        visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .page.fadeIn {
+        visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+
