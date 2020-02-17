@@ -71,7 +71,7 @@
     </div>
   </nav>
 
-  <div id="page1-content" class="page">
+  <div id="page1-content" class="page currentPage">
       <!-- Header - set the background image for the header in the line below -->
       <header class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
         <div style="height: 200px;"></div>
@@ -98,7 +98,7 @@
           <h1 class="cursive">Wedding Details</h1>
 
           <div class="row">
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 reveal" align="center">
               <p class="typed" align="center">Ceremony</p>
               <img src="img/scs2.jpg" align="center" alt="Saint Catherine of Siena
               Catholic Church" height="180px"> 
@@ -107,7 +107,7 @@
               <p class="typed-small" align="center">2:30 PM</p>
               <p class="typed-small" align="center">321 Witmer Rd, Horsham, PA 19044</p>
             </div>
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 reveal" align="center">
               <p class="typed" align="center">Reception</p>
               <img src="img/awh.png" align="center" alt="Anthony Wayne House" height="180px"> 
               <p class="typed-small" align="center">Saturday, November 14, 2020</p>
@@ -115,7 +115,7 @@
               <p class="typed-small" align="center">5:00 PM</p>
               <p class="typed-small" align="center">2049 Waynesborough Rd, Paoli, PA 19301</p>
             </div>
-            <div class="col-md-4" align="center">
+            <div class="col-md-4 reveal" align="center">
               <p class="typed">Sunday Morning Brunch</p>
               <img src="img/desmond.jpg" align="center" alt="Desmond Hotel Malvern" height="180px"> 
               <p class="typed-small">Sunday, November 15, 2020</p>
@@ -226,6 +226,7 @@
             var parent = target.parent();
             if (!parent.hasClass('active')) {
                 $('.active').removeClass('active');
+                $('.currentPage').addClass('goingAway');
                 parent.addClass('active');
                 $('.page').removeClass('currentPage');
                 $('.page').css('opacity','0');
@@ -235,13 +236,13 @@
     $(".nav-link").click(function(ev) {
         goTo($(ev.target).attr('id'));
     });
-    $('.page').on('transitionend webkitTransitionEnd oTransitionEnd', function () {
-        console.log('HIII');
-        $('.page').hide();
-        //$('.currentPage').removeClass('fadeOut');
-        //$('.currentPage').addClass('fadeIn');
-        $('.currentPage').show();
-        $('.currentPage').css('opacity','1');
+    $('.page').on('transitionend webkitTransitionEnd oTransitionEnd', function (e) {
+        if ($(e.target).hasClass('goingAway')) { 
+            $('.goingAway').removeClass('goingAway');
+            $('.page').hide();
+            $('.currentPage').show();
+            $('.currentPage').css('opacity','1');
+        }
     });
     $('.page').hide();
     $('#page1-content').show();
@@ -252,6 +253,12 @@
     } 
     </script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: true });
+        function go(e) { }
+        sr.reveal('.reveal', { duration: 1000, viewFactor: 0.1, beforeReveal: go, afterReveal: go });
+    </script>
 
 </body>
 
