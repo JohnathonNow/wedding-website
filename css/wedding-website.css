@@ -31,6 +31,10 @@ body {
   text-transform: uppercase;
 }
 
+.typed-small {
+  font-family: 'Josefin Slab', serif;
+}
+
 .navbar-brand,
 .navbar-nav li a {
     /*
