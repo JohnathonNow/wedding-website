@@ -33,7 +33,9 @@ body {
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 150px;
+    /*
     height: 150px;
+    */
+    line-height: 120px;
     padding-top: 0;
 }
