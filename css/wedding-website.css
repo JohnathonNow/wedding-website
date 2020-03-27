@@ -31,6 +31,13 @@ body {
   font-size: 25pt;
 }
 
+.logo {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .smollink {
     height: 1em;
 }
