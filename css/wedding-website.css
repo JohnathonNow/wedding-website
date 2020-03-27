@@ -21,6 +21,7 @@ body {
 
 .my-5 {
     margin-top: 3rem !important;
+    margin-bottom: 0 !important;
 }
 
 .cursive {
