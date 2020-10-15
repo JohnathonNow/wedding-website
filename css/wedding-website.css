@@ -53,6 +53,10 @@ body {
   text-transform: uppercase;
 }
 
+.typed2 {
+  font-family: 'Josefin Slab', serif;
+}
+
 .lowercase {
   font-family: 'Josefin Slab', serif;
   text-transform: lowercase;
