@@ -3,20 +3,29 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
+@font-face {
+    font-family: 'apothecary_serifregular';
+    src: url('/fonts/apothecary-webfont.woff2') format('woff2'),
+         url('/fonts/apothecary-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-  padding-top: 56px;
+    padding-top: 56px;
 }
 
 .fontyboi {
-     text-shadow: 2px 2px 2px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    text-shadow: 2px 2px 2px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
 
 .bg-image-full {
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .my-5 {
@@ -25,10 +34,10 @@ body {
 }
 
 .cursive {
-  /*font-family: 'Herr Von Muellerhoff', cursive;
-   */
-  font-family: 'Meddon', cursive;
-  font-size: 25pt;
+    /*font-family: 'Herr Von Muellerhoff', cursive;
+     */
+font-family: 'Meddon', cursive;
+font-size: 25pt;
 }
 
 .logo {
@@ -49,21 +58,21 @@ body {
 }
 
 .typed {
-  font-family: 'Josefin Slab', serif;
-  text-transform: uppercase;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
 }
 
 .typed2 {
-  font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', serif;
 }
 
 .lowercase {
-  font-family: 'Josefin Slab', serif;
-  text-transform: lowercase;
+    font-family: 'Josefin Slab', serif;
+    text-transform: lowercase;
 }
 
 .typed-small {
-  font-family: 'Josefin Slab', serif;
+    font-family: 'Josefin Slab', serif;
 }
 
 .navbar-brand,
@@ -75,5 +84,14 @@ body {
     margin-top: 45px;
 }
 .page {
-      transition: visibility 0s, opacity 0.75s linear;
-    }
+    transition: visibility 0s, opacity 0.75s linear;
+}
+
+#rsvp {
+    display:block;
+    margin: 0 auto;
+}
+.ff-form .ff-required {
+    visibility: hidden;
+}
+
