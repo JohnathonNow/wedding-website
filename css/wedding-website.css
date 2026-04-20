@@ -3,6 +3,9 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
+:root {
+	--typed-font: "Sorts Mill Goudy", serif;
+}
 @font-face {
     font-family: 'apothecary_serifregular';
     src: url('/fonts/apothecary-webfont.woff2') format('woff2'),
@@ -11,6 +14,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'rose';
+    src: url('/fonts/RoseOrchardGarden.woff2') format('woff2'),
+         url('/fonts/RoseOrchardGarden.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     padding-top: 56px;
@@ -36,7 +46,7 @@ body {
 .cursive {
     /*font-family: 'Herr Von Muellerhoff', cursive;
      */
-font-family: 'Meddon', cursive;
+font-family: 'rose';
 font-size: 25pt;
 }
 
@@ -58,21 +68,21 @@ font-size: 25pt;
 }
 
 .typed {
-    font-family: 'Josefin Slab', serif;
+    font-family: var(--typed-font);
     text-transform: uppercase;
 }
 
 .typed2 {
-    font-family: 'Josefin Slab', serif;
+    font-family: var(--typed-font);
 }
 
 .lowercase {
-    font-family: 'Josefin Slab', serif;
+    font-family: var(--typed-font);
     text-transform: lowercase;
 }
 
 .typed-small {
-    font-family: 'Josefin Slab', serif;
+    font-family: var(--typed-font);
 }
 
 .navbar-brand,
