@@ -1,0 +1,273 @@
+/*!
+ * Start Bootstrap - Full Width Pics (https://startbootstrap.com/template-overviews/full-width-pics)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/master/LICENSE)
+ */
+:root {
+	--typed-font: "Sorts Mill Goudy", serif;
+    --green: #7f7d38;
+}
+@font-face {
+    font-family: 'apothecary_serifregular';
+    src: url('/fonts/apothecary-webfont.woff2') format('woff2'),
+         url('/fonts/apothecary-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rose';
+    src: url('/fonts/RoseOrchardGarden.woff2') format('woff2'),
+         url('/fonts/RoseOrchardGarden.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontyboi {
+    text-shadow: 2px 2px 2px #000000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+}
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 0 !important;
+}
+
+.cursive {
+    /*font-family: 'Herr Von Muellerhoff', cursive;
+     */
+font-family: 'rose';
+font-size: 25pt;
+}
+
+.smollink {
+    height: 1em;
+}
+
+.typed {
+    font-family: var(--typed-font);
+    /* text-transform: uppercase; */
+}
+
+.typed2 {
+    font-family: var(--typed-font);
+}
+
+.lowercase {
+    font-family: var(--typed-font);
+    text-transform: lowercase;
+}
+
+.typed-small {
+    font-family: var(--typed-font);
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    padding-top: 0;
+}
+
+.nav-link {
+    margin-top: 45px;
+}
+.page {
+    transition: visibility 0s, opacity 0.75s linear;
+}
+
+#rsvp {
+    display:block;
+    margin: 0 auto;
+}
+.ff-form .ff-required {
+    visibility: hidden;
+}
+
+
+
+#intro {
+    background: url("/assets/nature.jpg");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: 100% auto;
+}
+
+#logo {
+    background: url("/assets/w.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+    color: var(--green);
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+.pad {
+    padding: 24px;
+}
+
+
+#date {
+    font-size: 24pt;
+}
+
+.frame-up {
+    background: url("/assets/frame2.png");
+    width: 100%;
+    height: 24px;
+    background-size: contain;
+}
+
+.frame-down {
+    background: url("/assets/frame2.png");
+    width: 100%;
+    height: 24px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    background-size: contain;
+}
+
+.pic {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+#pic1 {
+    background-image: url("/assets/pic1.jpg");
+    background-position: 50% 39%;
+}
+
+#pic2 {
+    background-image: url("/assets/pic2.png");
+    height: 300px;
+    mask: linear-gradient(#000 0 0) 0% 0% / 100% 100% subtract, url("/assets/frame3.png") 0% bottom / auto 24px repeat no-repeat;
+}
+
+.frame-left {
+    background: url("/assets/frame1.png");
+    height: 180px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    margin-top: -60px;
+}
+
+.frame-right {
+    background: url("/assets/frame1.png");
+    height: 180px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#pfpholder {
+    display: flex;
+    margin: 10%;
+}
+
+#pfp {
+    height: 300px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -60px;
+}
+
+.left {
+    text-align: left;
+}
+
+.sixty {
+    width: 60%;
+    text-align: center;
+}
+
+.forty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    flex-wrap: wrap
+}
+
+
+.frame-cut {
+    background: url("/assets/frame3.png");
+    width: 100%;
+    height: 24px;
+    margin-top: -24px;
+    background-size: contain;
+    background-blend-mode: multiply;
+}
+
+#map {
+    width: 60%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.inset {
+    margin-left: 24px;
+}
+
+.break {
+    height: 0;
+    flex-basis: 100%;;
+}
+
+.seventy {
+    width: 70%;
+    text-align: center;
+}
+
+.thirty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    flex-wrap: wrap
+}
+
+.big {
+    font-size: 18pt;
+}
