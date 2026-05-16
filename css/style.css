@@ -168,6 +168,12 @@ body {
     mask: linear-gradient(#000 0 0) 0% 0% / 100% 100% subtract, url("/assets/frame3.png") 0% bottom / auto 24px repeat no-repeat;
 }
 
+#pic3 {
+    background-image: url("/assets/pic3.jpg");
+    height: 400px;
+    background-position: 50% 22%;
+}
+
 .frame-left {
     background: url("/assets/frame1.png");
     height: 360px;
@@ -277,7 +283,18 @@ body {
     margin-left: 19%;
 }
 
-body {
+#background {
     background-image: url("/assets/background.jpeg");
     background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+}
+
+.hotel {
+    width: 90%;
+    height: auto;
 }
