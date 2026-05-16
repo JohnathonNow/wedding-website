@@ -111,7 +111,7 @@ font-size: 25pt;
 }
 
 body {
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
     padding: 0px;
     margin: 0px;
     color: var(--green);
@@ -170,24 +170,24 @@ body {
 
 .frame-left {
     background: url("/assets/frame1.png");
-    height: 180px;
-    width: 120px;
+    height: 360px;
+    width: 240px;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     left: 0;
-    margin-top: -60px;
+    margin-top: -120px;
 }
 
 .frame-right {
     background: url("/assets/frame1.png");
-    height: 180px;
-    width: 120px;
+    height: 360px;
+    width: 240px;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     right: 0;
-    margin-top: -60px;
+    margin-top: -120px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -270,4 +270,14 @@ body {
 
 .big {
     font-size: 18pt;
+}
+
+.narrow {
+    max-width: 60%;
+    margin-left: 19%;
+}
+
+body {
+    background-image: url("/assets/background.jpeg");
+    background-size: cover;
 }
